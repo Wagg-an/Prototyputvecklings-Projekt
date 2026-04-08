@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class P_Raycast_Drag : MonoBehaviour
 {
 
-    float size = 50f;
+    float size = 3f;
 
     GameObject draggedObject;
     float dragDistance;
