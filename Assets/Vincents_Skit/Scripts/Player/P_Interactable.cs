@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Interactable : MonoBehaviour
+public class P_Interactable : MonoBehaviour
 {
     CharacterController cc;
 
@@ -30,19 +30,20 @@ public class Interactable : MonoBehaviour
         Raycast();
     }
 
-    void Raycast()
+    public void Raycast()
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-        Debug.DrawRay(ray.origin, ray.direction * size, Color.red, 0.001f);
-
-        if (interact.WasPressedThisFrame())
+        
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, size, interactableLayer))
         {
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, size, interactableLayer))
+            Debug.DrawRay(ray.origin, ray.direction * size, Color.blue, 3f);
+            if(interact.WasPressedThisFrame())
             {
-
+                selectedObj = hit.transform.gameObject;
+                selectedObj.GetComponent<InteractBaseClass>().Interact();
             }
-
+                
         }
     }
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GateOpenScript : MonoBehaviour
+public class GateOpenScript : InteractBaseClass
 {
     public bool Open = false;
     bool hasOpened = false;
@@ -14,14 +14,18 @@ public class GateOpenScript : MonoBehaviour
     {
         if(Open && !hasOpened)
         {
-            open();
+            Interact();
         }
     }
 
-    void open()
+    override public void Interact()
     {
-        gameObject.transform.Rotate(0.0f, -90.0f, 0.0f, Space.Self);
-        hasOpened = true;
+        if (!hasOpened)
+        {
+            gameObject.transform.Rotate(0.0f, -90.0f, 0.0f, Space.Self);
+            hasOpened = true;
+        }
+        
 
     }
 }
