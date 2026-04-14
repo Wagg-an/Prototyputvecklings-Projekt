@@ -18,7 +18,6 @@ public class BoardPlay : InteractBaseClass
 
     override public void Interact()
     {
-        Debug.Log("Play board game");
         camera2.targetDisplay = 0;
     }
 }

@@ -37,7 +37,6 @@ public class P_Interactable : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, size, interactableLayer))
         {
-            Debug.DrawRay(ray.origin, ray.direction * size, Color.blue, 3f);
             if(interact.WasPressedThisFrame())
             {
                 selectedObj = hit.transform.gameObject;
