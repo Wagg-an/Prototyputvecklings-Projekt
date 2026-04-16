@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class KeyCounter : MonoBehaviour
+{
+    public static int counter = 0;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (CompareTag("key") && collision.gameObject.CompareTag("keyhole"))
+        {
+            counter++;
+            Debug.Log("Counter: " + counter);
+            Destroy(gameObject);
+        }
+        else if (CompareTag("keyhole") && collision.gameObject.CompareTag("key"))
+        {
+            counter++;
+            Debug.Log("Counter: " + counter);
+            Destroy(collision.gameObject);
+        }
+    }
+}
