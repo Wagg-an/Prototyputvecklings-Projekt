@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class DoorToHallway : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Animator animator;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("key"))
+        {
+            Destroy(other.gameObject);
+
+            animator.SetTrigger("OpenDoor");
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
