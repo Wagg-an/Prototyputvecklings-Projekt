@@ -935,7 +935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77ab3f20b81cf149bed1843c72fc0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_Movement
-  startSpeed: 8
+  startSpeed: 20
 --- !u!143 &1354917193
 CharacterController:
   m_ObjectHideFlags: 0
@@ -976,6 +976,7 @@ MonoBehaviour:
   draggableLayer:
     serializedVersion: 2
     m_Bits: 128
+  rotationSpeed: 100
 --- !u!1 &1392699860
 GameObject:
   m_ObjectHideFlags: 0
