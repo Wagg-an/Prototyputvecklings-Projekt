@@ -10,7 +10,7 @@ public class DoorToHallway : MonoBehaviour
         {
             Destroy(other.gameObject);
 
-            animator.SetTrigger("OpenDoor");
+            animator.SetTrigger("OpenDoor1");
 
         }
     }
