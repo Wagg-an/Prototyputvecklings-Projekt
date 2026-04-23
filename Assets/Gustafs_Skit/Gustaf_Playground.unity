@@ -2383,6 +2383,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8621638846287653996, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
       propertyPath: m_Name
       value: Oven (1)
@@ -2397,6 +2429,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1681474710}
+    - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1681474714}
+    - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1681474715}
   m_SourcePrefab: {fileID: 100100000, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
 --- !u!1001 &428216476
 PrefabInstance:
@@ -5681,6 +5719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
       propertyPath: m_Name
       value: Oven
@@ -5695,6 +5737,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1850297815}
+    - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1850297820}
+    - targetCorrespondingSourceObject: {fileID: -1730676172429756871, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1850297819}
   m_SourcePrefab: {fileID: 100100000, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
 --- !u!1001 &1469561512
 PrefabInstance:
@@ -6269,9 +6317,44 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4746319076196673038, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+--- !u!95 &1681474714
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681474708}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62e56900ce5f28d42a720cf28cbea5e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1681474715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681474708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086165af1ea081b4088f19f3f25bfc98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OvenController
+  open: 0
 --- !u!1 &1694598649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3672832592286486059, guid: 7e5389eaae9352a4e963e3894a92337e, type: 3}
@@ -6913,6 +6996,41 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4746319076196673038, guid: 15ef247215a1f29428fcac11edddd7ba, type: 3}
+--- !u!114 &1850297819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850297811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086165af1ea081b4088f19f3f25bfc98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OvenController
+  open: 0
+--- !u!95 &1850297820
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850297811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62e56900ce5f28d42a720cf28cbea5e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1863742504 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2678957884619817983, guid: efa38ae6523745a4d8dcccab5d74c0d3, type: 3}
