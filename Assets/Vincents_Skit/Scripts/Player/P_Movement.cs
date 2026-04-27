@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class P_Movement : MonoBehaviour
 {
     CharacterController cc;
-    public float startSpeed = 8f;
+    public float startSpeed = 20f;
     float speed;
     
     InputActionMap player;
@@ -37,7 +37,7 @@ public class P_Movement : MonoBehaviour
         speed = startSpeed;
         if(sprint.IsPressed())
         {
-            speed = 18;
+            speed = startSpeed * 2;
         }
         
         Vector2 move = walk.ReadValue<Vector2>();
