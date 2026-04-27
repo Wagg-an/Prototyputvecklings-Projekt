@@ -114,6 +114,7 @@ public class P_Raycast_Drag : MonoBehaviour
         if (Input.GetKey(KeyCode.F))
         {
             vertical = 1f;
+            Debug.Log("Pressing Rotate");
         }
         if (Input.GetKey(KeyCode.V))
         {
