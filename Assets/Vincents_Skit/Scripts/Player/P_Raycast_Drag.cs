@@ -100,44 +100,47 @@ public class P_Raycast_Drag : MonoBehaviour
     }
 
     void RotateHandle()
+
     {
-        float horizontal = 0f;
-        float vertical = 0f;
-        if (Input.GetKey(KeyCode.Q))
+        if(gameObject != null)
         {
-            horizontal = -1f;
-        }
-        if (Input.GetKey(KeyCode.E))
-        {
-            horizontal = 1f;
-        }
-        if (Input.GetKey(KeyCode.F))
-        {
-            vertical = 1f;
-        }
-        if (Input.GetKey(KeyCode.V))
-        {
-            vertical = -1f;
-        }
+            float horizontal = 0f;
+            float vertical = 0f;
+            if (Input.GetKey(KeyCode.Q))
+            {
+                horizontal = -1f;
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                horizontal = 1f;
+            }
+            if (Input.GetKey(KeyCode.F))
+            {
+                vertical = 1f;
+            }
+            if (Input.GetKey(KeyCode.V))
+            {
+                vertical = -1f;
+            }
 
 
-        if(vertical != 0f)
-        {
-            Debug.Log("Rotate");
-            draggedObject.transform.Rotate(
-                Vector3.right,
-                vertical * rotationSpeed * Time.deltaTime,
-                Space.World
-            );
+            if(vertical != 0f)
+            {
+                draggedObject.transform.Rotate(
+                    Vector3.right,
+                    vertical * rotationSpeed * Time.deltaTime,
+                    Space.World
+                );
+            }
+            if(horizontal != 0f)
+            {
+                draggedObject.transform.Rotate(
+                    Vector3.up,
+                    horizontal * rotationSpeed * Time.deltaTime,
+                    Space.World
+                );
+            }
         }
-        if(horizontal != 0f)
-        {
-            Debug.Log("UpnDown");
-            draggedObject.transform.Rotate(
-                Vector3.up,
-                horizontal * rotationSpeed * Time.deltaTime,
-                Space.World
-            );
-        }
+        
     }
 }
