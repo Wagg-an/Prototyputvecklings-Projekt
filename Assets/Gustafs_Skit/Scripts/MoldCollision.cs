@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MoldCollision : MonoBehaviour
 {
+    public GameObject WholeKeyMold;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +18,11 @@ public class MoldCollision : MonoBehaviour
     {
         if (col.gameObject.name == "KeyMold2")
         {
-            Debug.Log("Hit");
+            Instantiate(WholeKeyMold, transform.position, Quaternion.identity);
+
+
+            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 }
