@@ -17,8 +17,7 @@ public class CodeLockUI : MonoBehaviour
 
     [Header("Door Animation")]
     public Animator doorAnimator;
-    public string openTriggerName = "OpenDoor";
-    private bool isOpened = false;
+    public string triggerName = "OpenDoor";
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -69,7 +68,7 @@ public class CodeLockUI : MonoBehaviour
             if (audioSource && successSound)
                 audioSource.PlayOneShot(successSound);
 
-            OpenDoor();
+            TriggerDoor();
             CloseLock();
         }
         else
@@ -101,18 +100,18 @@ public class CodeLockUI : MonoBehaviour
         }
     }
 
-    void OpenDoor()
+    void TriggerDoor()
     {
-        if (isOpened) return;
+        if (hasOpened) return;
 
         if (doorAnimator != null)
         {
-            doorAnimator.SetTrigger(openTriggerName);
-            isOpened = true;
+            doorAnimator.SetTrigger(triggerName);
+            hasOpened = true;
         }
         else
         {
-            Debug.LogError("Door Animator is not assigned!");
+            Debug.LogError("Door Animator not assigned!");
         }
     }
 
