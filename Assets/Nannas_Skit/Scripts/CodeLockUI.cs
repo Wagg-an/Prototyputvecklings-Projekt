@@ -18,6 +18,7 @@ public class CodeLockUI : MonoBehaviour
     [Header("Door Animation")]
     public Animator doorAnimator;
     public string triggerName = "OpenDoor";
+    private bool hasOpened = false;
 
     [Header("Audio")]
     public AudioSource audioSource;
