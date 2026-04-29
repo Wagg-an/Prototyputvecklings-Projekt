@@ -1,10 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class P_Look : MonoBehaviour
 {
     [SerializeField] float mouseSens = 150f;
     float xRot;
+
+    public Slider slide;
+    public TMP_Text displaySense;
+
 
     InputActionMap player;
     InputAction look;
@@ -37,6 +42,11 @@ public class P_Look : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
         transform.parent.Rotate(Vector3.up, xLook, Space.World);
+    }
+
+    public void changeSense()
+    {
+
     }
 
 }

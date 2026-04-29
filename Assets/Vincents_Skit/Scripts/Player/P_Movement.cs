@@ -13,6 +13,8 @@ public class P_Movement : MonoBehaviour
 
     Vector3 movement;
 
+    public ParticleSystem particle;
+
     void Start()
     {
         cc = gameObject.GetComponent<CharacterController>();
@@ -38,6 +40,7 @@ public class P_Movement : MonoBehaviour
         if(sprint.IsPressed())
         {
             speed = startSpeed * 2;
+            particle.Play();
         }
         
         Vector2 move = walk.ReadValue<Vector2>();
