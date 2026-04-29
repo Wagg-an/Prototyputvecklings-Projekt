@@ -7,7 +7,7 @@ public class P_Look : MonoBehaviour
     [SerializeField] float mouseSens = 150f;
     float xRot;
 
-    public Slider slide;
+    //public Slider slide;
     public TMP_Text displaySense;
 
 
