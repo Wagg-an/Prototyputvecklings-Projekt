@@ -19931,6 +19931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4682089435028740207, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f280a1adc4d2994695b9eb4183c2403, type: 2}
     - target: {fileID: 919132149155446097, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
       propertyPath: m_Name
       value: Wellies (7)
@@ -21885,6 +21889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4682089435028740207, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f280a1adc4d2994695b9eb4183c2403, type: 2}
     - target: {fileID: 919132149155446097, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
       propertyPath: m_Name
       value: Wellies (6)
@@ -23660,6 +23668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4682089435028740207, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 043c6571093e38b4b82278e688c24069, type: 2}
     - target: {fileID: 919132149155446097, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
       propertyPath: m_Name
       value: Wellies (1)
@@ -26125,6 +26137,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4682089435028740207, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 043c6571093e38b4b82278e688c24069, type: 2}
     - target: {fileID: 919132149155446097, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
       propertyPath: m_Name
       value: Wellies
@@ -41797,6 +41813,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -43.518
       objectReference: {fileID: 0}
+    - target: {fileID: -4682089435028740207, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e52b19fcdb011754f80b39c3a60697ea, type: 2}
     - target: {fileID: 919132149155446097, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
       propertyPath: m_Name
       value: Wellies (17)
@@ -56156,7 +56176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1833810152192036645, guid: 63aa374c7c6d2be4eac81b849c164dcf, type: 3}
+  - {fileID: 2100000, guid: e52b19fcdb011754f80b39c3a60697ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
