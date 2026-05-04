@@ -41,10 +41,7 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1f;
         isGamePaused = false;
     }
-    public void settings()
-    {
-        
-    }
+  
     public void mainMenu()
     {
         
