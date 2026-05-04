@@ -1,10 +1,11 @@
 using UnityEngine;
 using TMPro;
 
+
 public class TimerScript : MonoBehaviour
 {
     public TMP_Text timer;
-
+    public GameObject LoosePanel;
     string time;
 
     float temp = 0;
@@ -21,6 +22,8 @@ public class TimerScript : MonoBehaviour
 
         time = min.ToString() + "." + sec.ToString();
         timer.text = time;
+
+        LoosePanel.SetActive(false);
     }
 
 
@@ -32,13 +35,14 @@ public class TimerScript : MonoBehaviour
 
             time = min.ToString() + "." + sec.ToString();
             timer.text = time;
-            //Game over things or something idk  
+            
 
         }
         
         if(min <= 0 && sec <= 0)
         {
             endTime = true;
+            GameOver();
         }
     }
 
@@ -59,8 +63,14 @@ public class TimerScript : MonoBehaviour
             sec = 0;
             min += 1;
         }
-        
-
-
     }
+
+    void GameOver()
+    {
+        Time.timeScale = 0f;
+        LoosePanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+
 }
