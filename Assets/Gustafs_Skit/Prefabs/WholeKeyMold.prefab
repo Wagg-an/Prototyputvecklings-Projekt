@@ -66,6 +66,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e140e6c601092dd4b908960b9f5d4fbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 571166270307229469}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e140e6c601092dd4b908960b9f5d4fbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2526543131397387608}
   m_SourcePrefab: {fileID: 100100000, guid: e140e6c601092dd4b908960b9f5d4fbd, type: 3}
 --- !u!1 &8921947493591683971 stripped
 GameObject:
@@ -120,3 +123,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.46254197, y: 0.068555616, z: 0.3406083}
   m_Center: {x: -0.12533872, y: -0.028168708, z: -0.010694377}
+--- !u!114 &2526543131397387608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921947493591683971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc638e6a0d3b56744ae7250932566785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  KitchenKey: {fileID: 5322471875155417218, guid: ef5eb1380f730c44dbcd9f6940fb3cfe, type: 3}
+  bowlPrefab: {fileID: 5589410652121352704, guid: 0938cdcc005f4564b82e1f76862d372f, type: 3}
