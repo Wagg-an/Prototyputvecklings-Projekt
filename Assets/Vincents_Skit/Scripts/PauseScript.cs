@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class PauseScript : MonoBehaviour
   
     public void mainMenu()
     {
-        
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
