@@ -17,7 +17,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void play()
     {
-        SceneManager.LoadScene("DemoSprint1");
+        SceneManager.LoadScene("DemoSprint2");
     }
     public void quit()
     {
