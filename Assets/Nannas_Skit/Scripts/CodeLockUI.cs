@@ -6,7 +6,7 @@ using System.Collections;
 public class CodeLockUI : MonoBehaviour
 {
     [Header("Code Settings")]
-    public string correctCode = "ABCD";
+    public string correctCode = "BDEA";
     private string currentInput = "";
 
     [Header("UI")]
