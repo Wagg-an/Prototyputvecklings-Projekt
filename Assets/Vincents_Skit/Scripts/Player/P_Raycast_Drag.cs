@@ -43,7 +43,7 @@ public class P_Raycast_Drag : MonoBehaviour
     void Raycast()
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-        Debug.DrawRay(ray.origin, ray.direction * size, Color.red, 0.001f);
+        Debug.DrawRay(ray.origin, ray.direction * size, Color.red, 0.1f);
 
         if(click.WasPressedThisFrame())
         {
