@@ -11707,6 +11707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_Look
   mouseSens: 150
+  displaySense: {fileID: 0}
 --- !u!1 &1454255266
 GameObject:
   m_ObjectHideFlags: 0
