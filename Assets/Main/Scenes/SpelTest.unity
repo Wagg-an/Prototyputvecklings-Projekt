@@ -17558,9 +17558,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413794408}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 100
+  m_LinearDamping: 1
+  m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -59763,7 +59763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77ab3f20b81cf149bed1843c72fc0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_Movement
-  startSpeed: 30
+  startSpeed: 100
   particle: {fileID: 651085412}
 --- !u!143 &1354917193
 CharacterController:
@@ -63722,7 +63722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c344d8b9669683429df190d398d65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_Look
-  mouseSens: 150
+  mouseSens: 50
   slide: {fileID: 1568711044}
   displaySenseText: {fileID: 1726474246}
 --- !u!114 &1411379895

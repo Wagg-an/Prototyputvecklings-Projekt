@@ -17,7 +17,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void play()
     {
-        SceneManager.LoadScene("DemoSprint2");
+        SceneManager.LoadScene("SpelTest");
     }
     public void quit()
     {
