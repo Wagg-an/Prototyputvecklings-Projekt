@@ -54,6 +54,7 @@ public class TicTacGM : MonoBehaviour
         GMCanvas.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
     }
 
