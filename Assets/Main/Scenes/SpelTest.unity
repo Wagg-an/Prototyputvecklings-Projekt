@@ -19948,7 +19948,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04edb339a65755344bb51cd9ca3aead6, type: 2}
+  - {fileID: 2100000, guid: 3c4e6b71aee6b85448896e0af177a8d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25321,7 +25321,7 @@ Transform:
   m_GameObject: {fileID: 597193021}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5.8330603}
+  m_LocalPosition: {x: 0, y: 0, z: 5.74}
   m_LocalScale: {x: 10.257007, y: 10.257007, z: 10.257007}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59578,7 +59578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77ab3f20b81cf149bed1843c72fc0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P_Movement
-  startSpeed: 60
+  startSpeed: 30
   particle: {fileID: 651085412}
 --- !u!143 &1354917193
 CharacterController:
@@ -73767,7 +73767,7 @@ Transform:
   m_GameObject: {fileID: 1690935706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.8565183}
+  m_LocalPosition: {x: 0, y: 0, z: -1.9495788}
   m_LocalScale: {x: 10.257007, y: 10.257007, z: 10.257007}
   m_ConstrainProportionsScale: 0
   m_Children:
