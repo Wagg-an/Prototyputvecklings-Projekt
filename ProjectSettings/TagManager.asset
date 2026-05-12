@@ -6,6 +6,7 @@ TagManager:
   tags:
   - key
   - keyhole
+  - Enemy
   layers:
   - Default
   - TransparentFX

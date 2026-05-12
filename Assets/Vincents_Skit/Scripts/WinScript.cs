@@ -17,7 +17,6 @@ public class WinScript : MonoBehaviour
         if(col.gameObject.name == player.name)
         {
             Time.timeScale = 0f;
-            //SceneManager.LoadScene("Win");
             winPanel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
         }
