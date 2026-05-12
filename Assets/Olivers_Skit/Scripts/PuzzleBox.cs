@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PuzzleBox : MonoBehaviour
 {
-    public int keyCount = 0;
+    private int keyCount = 0;
     public Animator animator;
-    public string forms;
+    private string forms;
     private void OnTriggerEnter(Collider other)
     {
         forms = other.name;
