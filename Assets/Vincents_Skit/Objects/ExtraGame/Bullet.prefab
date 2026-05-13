@@ -108,7 +108,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletScrip
   enemy: {fileID: 4120580025405347871, guid: b42b167566d71f744a88e3eb7359f88a, type: 3}
+  roof: {fileID: 7253749928152545243, guid: 6ab14fe29f3c4c54e915708e1ce0cfbc, type: 3}
 --- !u!54 &8327836043134151895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,8 +152,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0

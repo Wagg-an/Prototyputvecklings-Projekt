@@ -63,7 +63,7 @@ public class ShipScript : MonoBehaviour
     {
         if(canShoot)
         {
-            Debug.Log("Shoot");
+            
             GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
             rb.AddForce(shootPoint.up * force, ForceMode.Impulse);

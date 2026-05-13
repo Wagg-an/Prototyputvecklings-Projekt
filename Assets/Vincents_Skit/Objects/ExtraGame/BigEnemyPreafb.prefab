@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 972965432179089137}
   - component: {fileID: 8274777170887383725}
   - component: {fileID: 4800351838041291620}
+  - component: {fileID: -2342708550162600532}
   m_Layer: 0
   m_Name: BigEnemyPreafb
   m_TagString: Enemy
@@ -128,4 +129,31 @@ MonoBehaviour:
   particle: {fileID: 0}
   Life: 3
   value: 500
-  scoreDisp: {fileID: 0}
+  scoreDisp: {fileID: 3243799247827571669, guid: 3cabc35f8aa33e249802643dd72734bc, type: 3}
+--- !u!54 &-2342708550162600532
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7406383432640953620}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
