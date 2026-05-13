@@ -75259,7 +75259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 07999c73d9145c0448f59a63cd87a6c1, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3192712782840163648, guid: 07999c73d9145c0448f59a63cd87a6c1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -75333,7 +75333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82aeffaf2637ba5418bbb1a73639d67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CodeLockInteract
-  lockCanvas: {fileID: 2132070247}
+  lockCanvas: {fileID: 1557550817}
 --- !u!1001 &2138843977
 PrefabInstance:
   m_ObjectHideFlags: 0
