@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class PuzzleBox : MonoBehaviour
 {
-    public int keyCount = 0;
+    private int keyCount = 0;
     public Animator animator;
-    private string form = "";
-
+    private string forms;
     private void OnTriggerEnter(Collider other)
     {
+        forms = other.name;
+
         if (other.CompareTag("key"))
         {
-            form = other.name;
             Destroy(other.gameObject);
             keyCount++;
 
-            Debug.Log(form);
             Debug.Log("Key collected: " + keyCount);
 
             TriggerAnimation();
@@ -23,15 +22,15 @@ public class PuzzleBox : MonoBehaviour
 
     void TriggerAnimation()
     {
-        if (form == "redCube")
+        if (forms == "redCube")
         {
             animator.SetTrigger("Key1");
         }
-        else if (form == "blueCylinder")
+        else if (forms == "blueCylinder")
         {
             animator.SetTrigger("Key2");
         }
-        else if (form == "yellowTriangle")
+        else if (forms == "yellowTriangle")
         {
             animator.SetTrigger("Key3");
         }

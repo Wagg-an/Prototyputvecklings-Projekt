@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Main/Scenes/DemoSprint1.unity
     guid: f3648b98fdd00e349a3e0094db227e10
-  - enabled: 1
+  - enabled: 0
     path: Assets/Vincents_Skit/MainMenu.unity
     guid: 83a7b21cc206e794daab208584ddfca6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Main/Scenes/DemoSprint2.unity
     guid: 402f761460c501c4e9069a9d98b80b0d
+  - enabled: 1
+    path: Assets/Main/Scenes/SpelTest.unity
+    guid: 8f67f25fbb2f8c245b8db26ad8f320a6
+  - enabled: 0
+    path: Assets/Olivers_Skit/Win.unity
+    guid: f7e63f0fd52b80a429acdc6104b9a7e8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

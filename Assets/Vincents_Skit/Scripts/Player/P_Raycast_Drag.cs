@@ -43,7 +43,7 @@ public class P_Raycast_Drag : MonoBehaviour
     void Raycast()
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-        Debug.DrawRay(ray.origin, ray.direction * size, Color.red, 0.001f);
+        Debug.DrawRay(ray.origin, ray.direction * size, Color.red, 0.1f);
 
         if(click.WasPressedThisFrame())
         {
@@ -69,7 +69,7 @@ public class P_Raycast_Drag : MonoBehaviour
         
         if (click.IsPressed() && draggedObject != null && draggedRB != null)
         {
-            
+            Physics.IgnoreCollision(draggedObject.GetComponent<Collider>(), cc.GetComponent<Collider>(), true);
             Vector3 target = ray.origin + ray.direction * dragDistance;
 
             float radius = 0.1f;
@@ -88,8 +88,10 @@ public class P_Raycast_Drag : MonoBehaviour
         
         if (click.WasReleasedThisFrame())
         {
+            
             if (draggedRB != null)
             {
+                Physics.IgnoreCollision(draggedObject.GetComponent<Collider>(), cc.GetComponent<Collider>(), false);
                 draggedRB.useGravity = true;
             }
             draggedObject = null;
@@ -102,8 +104,9 @@ public class P_Raycast_Drag : MonoBehaviour
     void RotateHandle()
 
     {
-        if(gameObject != null)
+        if(draggedObject != null)
         {
+
             float horizontal = 0f;
             float vertical = 0f;
             if (Input.GetKey(KeyCode.Q))
