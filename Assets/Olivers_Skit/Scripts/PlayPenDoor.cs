@@ -8,6 +8,7 @@ public class PlayPenDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("DoorShouldBeWorking");
             animator.SetTrigger("OpenTheDoor");
         }
     }
