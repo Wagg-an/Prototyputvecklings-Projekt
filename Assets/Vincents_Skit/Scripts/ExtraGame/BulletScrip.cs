@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class BulletScrip : ShotBaseClass
+public class BulletScrip : MonoBehaviour 
+
 {
-    public GameObject enemy;
-    string enemyTag;
 
     public GameObject roof;
     string roofTag;
 
     void Start()
     {
-        enemyTag = enemy.tag;
         roofTag = roof.tag;
     }
 
@@ -23,13 +21,7 @@ public class BulletScrip : ShotBaseClass
     void OnTriggerEnter(Collider col)
     {
         
-        if(col.gameObject.tag == enemyTag)
-        {
-            col.gameObject.GetComponent<ShotBaseClass>().shot();
-            Destroy(gameObject);
-
-        }
-        else if(col.gameObject.tag == roofTag)
+        if(col.gameObject.tag == roofTag)
         {
             Destroy(gameObject);
         }

@@ -12,7 +12,7 @@ public class EnemySpawnerScript : MonoBehaviour
 
     public float force = 10f;
     Transform spawnPoint; 
-    public float waitTime = 2f;
+    public float waitTime = 3f;
 
     bool done = true;
 
@@ -31,15 +31,29 @@ public class EnemySpawnerScript : MonoBehaviour
     }
 
 
+    void OnEnable() 
+    {
+        waitTime = 3f;
+        done = true;
+    }
+
+
     void handleSpawn()
     {
-        while(play)
+        if(done)
         {
-            if(done)
+            int randNum = Random.Range(1, 6);
+            if(randNum >=2)
             {
                 spawnEnemy(enemySmall);
                 done = false;
             }
+            else if(randNum < 2)
+            {
+                spawnEnemy(enemyBig);
+                done = false;
+            }
+            waitTime -= 0.03f;
         }
     }
 

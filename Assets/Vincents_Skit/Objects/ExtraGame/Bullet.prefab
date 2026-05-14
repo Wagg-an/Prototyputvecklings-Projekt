@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8080654952747018926}
   - component: {fileID: 6123934861067833897}
   - component: {fileID: 3991549290989400438}
-  - component: {fileID: 9118771419569194476}
   - component: {fileID: 8327836043134151895}
+  - component: {fileID: 9118771419569194476}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,20 +116,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9118771419569194476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291136714788904545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e1e9c1f4a56f8b41869105557970e85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletScrip
-  enemy: {fileID: 4120580025405347871, guid: b42b167566d71f744a88e3eb7359f88a, type: 3}
-  roof: {fileID: 7253749928152545243, guid: 6ab14fe29f3c4c54e915708e1ce0cfbc, type: 3}
 --- !u!54 &8327836043134151895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -157,3 +143,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &9118771419569194476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291136714788904545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1e9c1f4a56f8b41869105557970e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletScrip
+  roof: {fileID: 7253749928152545243, guid: 6ab14fe29f3c4c54e915708e1ce0cfbc, type: 3}

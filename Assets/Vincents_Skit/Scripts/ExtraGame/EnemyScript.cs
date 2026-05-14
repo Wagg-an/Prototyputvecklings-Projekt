@@ -1,25 +1,30 @@
 using UnityEngine;
 using TMPro;
 
-public class EnemyScript : ShotBaseClass
+public class EnemyScript : MonoBehaviour 
 {
-
     public ParticleSystem particle;
     public int Life = 1;
     public int value = 100;
 
+    public GameObject bullet;
+    string bulletTag;
+
     void Start()
     {
-        
+        bulletTag = bullet.tag;
     }
 
     
     void Update()
     {
-        
+        if(GamemOdeSpaceShit.instance.life <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
     
-    override public void shot()
+    void shot()
     {
         Life -= 1;
         //particle.Play();
@@ -30,6 +35,21 @@ public class EnemyScript : ShotBaseClass
 
                 GamemOdeSpaceShit.instance.addScore(value);
             }
+            Destroy(gameObject);
+        }
+
+        
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.tag == bulletTag)
+        {
+            shot();
+            Destroy(col.gameObject);
+        }
+        else
+        {
+            GamemOdeSpaceShit.instance.hurting();
             Destroy(gameObject);
         }
 

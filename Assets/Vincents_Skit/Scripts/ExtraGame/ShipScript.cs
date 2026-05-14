@@ -33,7 +33,6 @@ public class ShipScript : MonoBehaviour
         player.Enable();
     }
 
-    // Update is called once per frame
     void Update()
     {
         move();
