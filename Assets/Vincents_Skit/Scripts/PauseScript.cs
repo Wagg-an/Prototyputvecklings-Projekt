@@ -9,6 +9,10 @@ public class PauseScript : MonoBehaviour
     void Start()
     {
         panel.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        panel.SetActive(false);
+        Time.timeScale = 1f;
+        isGamePaused = false;
         
     }
 
@@ -31,6 +35,7 @@ public class PauseScript : MonoBehaviour
     public void pause()
     {
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         panel.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;

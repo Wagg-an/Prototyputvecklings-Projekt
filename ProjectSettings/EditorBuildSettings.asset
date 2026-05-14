@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Main/Scenes/DemoSprint1.unity
     guid: f3648b98fdd00e349a3e0094db227e10
-  - enabled: 0
+  - enabled: 1
     path: Assets/Vincents_Skit/MainMenu.unity
     guid: 83a7b21cc206e794daab208584ddfca6
   - enabled: 0

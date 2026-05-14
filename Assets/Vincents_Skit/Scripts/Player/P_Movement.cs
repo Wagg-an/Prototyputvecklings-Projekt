@@ -39,7 +39,7 @@ public class P_Movement : MonoBehaviour
         speed = startSpeed;
         if(sprint.IsPressed())
         {
-            speed = startSpeed * 2;
+            speed = startSpeed * 3;
             particle.Play();
         }
         
