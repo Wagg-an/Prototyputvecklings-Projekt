@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class CodeLockInteract : MonoBehaviour
+public class CodeLockInteract : InteractBaseClass
 {
     public GameObject lockCanvas;
 
@@ -12,7 +13,7 @@ public class CodeLockInteract : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public override void Interact()
     {
         if (lockCanvas != null)
         {

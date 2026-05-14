@@ -70,7 +70,7 @@ public class CodeLockUI : MonoBehaviour
                 audioSource.PlayOneShot(successSound);
 
             TriggerDoor();
-            CloseLock();
+            StartCoroutine(CloseAfterSound());
         }
         else
         {
@@ -123,5 +123,12 @@ public class CodeLockUI : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    IEnumerator CloseAfterSound()
+    {
+        yield return new WaitForSeconds(1f);
+
+        CloseLock();
     }
 }
