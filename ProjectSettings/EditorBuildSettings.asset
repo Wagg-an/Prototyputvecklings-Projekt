@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/DemoSprint2.unity
     guid: 402f761460c501c4e9069a9d98b80b0d
   - enabled: 1
+    path: Assets/Main/Scenes/Sprint3.unity
+    guid: e554de484e3600548b8ff879eba4efc0
+  - enabled: 0
     path: Assets/Main/Scenes/SpelTest.unity
     guid: 8f67f25fbb2f8c245b8db26ad8f320a6
   - enabled: 0
