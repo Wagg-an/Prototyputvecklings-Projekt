@@ -19,11 +19,15 @@ public class GamemOdeSpaceShit : MonoBehaviour
     public int life = 5;
 
     bool once = false;
+    bool once2 = false;
+
+    public GameObject orgPlayer;
+    public Camera selfCam;
 
     void Start()
     {
-        //spawner.SetActive(false);
-        //spaceShip.SetActive(false);
+        spawner.SetActive(false);
+        spaceShip.SetActive(false);
         
     }
     void Awake()
@@ -32,13 +36,16 @@ public class GamemOdeSpaceShit : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    void OnEnable() 
-    {
-        startGame();
-    }
-
     void Update()
     {
+        if(selfCam.targetDisplay == 0 && !once2)
+        {
+            once2 = true;
+            orgPlayer.SetActive(false);
+            startGame();
+        }
+
+
         lifeDisp.text = life.ToString();
         if(life <= 0 && !once)
         {
@@ -61,11 +68,16 @@ public class GamemOdeSpaceShit : MonoBehaviour
         spaceShip.SetActive(false);
         spawner.SetActive(false);
         hud.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void quit()
     {
         hud.SetActive(false);
+        orgPlayer.SetActive(true);
+        selfCam.targetDisplay = 1;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void addScore(int value)

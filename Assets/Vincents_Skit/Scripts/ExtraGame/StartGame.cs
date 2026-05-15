@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class StartGame : InteractBaseClass
 {
-    public Camera extraGame;
+    public Camera camera2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +18,6 @@ public class StartGame : InteractBaseClass
 
     override public void Interact()
     {
-        extraGame.SetActive(true);
+        camera2.targetDisplay = 0;
     }
 }
