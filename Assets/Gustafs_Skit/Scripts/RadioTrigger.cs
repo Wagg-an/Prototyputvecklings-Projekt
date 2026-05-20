@@ -11,10 +11,7 @@ public class RadioInteract : InteractBaseClass
     {
         audioSource = GetComponent<AudioSource>();
 
-        if (audioSource == null)
-        {
-            Debug.LogError("No AudioSource found on the Radio object!");
-        }
+       
     }
 
     public override void Interact()
