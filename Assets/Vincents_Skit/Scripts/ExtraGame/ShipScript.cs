@@ -17,7 +17,7 @@ public class ShipScript : MonoBehaviour
 
     //other
     CharacterController cc;
-    public float speed = 20f;
+    public float speed = 5f;
     
     InputActionMap player;
     InputAction walk;
@@ -35,7 +35,16 @@ public class ShipScript : MonoBehaviour
 
     void Update()
     {
-        move();
+        if (walk.IsPressed())
+        {
+            move();
+            Invoke("move", 0.05f);
+        }
+        else
+        {
+            CancelInvoke("move");
+        }
+        
     }
 
 
@@ -57,6 +66,7 @@ public class ShipScript : MonoBehaviour
         movement = gameObject.transform.TransformDirection(movement);
         cc.Move(movement * speed * Time.deltaTime);
     }
+
 
     void shoot()
     {
