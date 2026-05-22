@@ -13,6 +13,8 @@ public class PauseScript : MonoBehaviour
         panel.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
+
+        Application.targetFrameRate = 120;
         
     }
 

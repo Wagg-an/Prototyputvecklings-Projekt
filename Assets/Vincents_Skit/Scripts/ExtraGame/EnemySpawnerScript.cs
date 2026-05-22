@@ -61,7 +61,7 @@ public class EnemySpawnerScript : MonoBehaviour
     {
         Vector3 xPoint = new Vector3(Random.Range(corner1.transform.position.x, corner2.transform.position.x),spawnPoint.position.y,spawnPoint.position.z);
         spawnPoint.position = xPoint;
-        GameObject enemy = Instantiate(type, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemy = Instantiate(type, spawnPoint.position, Quaternion.Euler(new Vector3(90, 0, 0)));
         Rigidbody rb = enemy.GetComponent<Rigidbody>();
         rb.AddForce(-spawnPoint.up * force, ForceMode.Impulse);
         StartCoroutine(WaitTimer());
